@@ -6,7 +6,7 @@ import { MdFavoriteBorder } from 'react-icons/md'
 import { HiOutlineShoppingBag } from 'react-icons/hi'
 
 // import {IconContext}from"react-icons"
-export default function Navbar(){
+export default function  SecondNav(){
     return <Container maxW="10xl" p='4' maxH="55px" bg=""  centerContent>
          <HStack spacing='190'>
          
