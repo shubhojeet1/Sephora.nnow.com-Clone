@@ -13,12 +13,14 @@ import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Logo } from './Logo';
 import Navbar from './components/Navbar';
 import SecondNav from './components/SecondNav'
+import Carousel from './components/Carousel';
 
 function App() {
   return (
 <ChakraProvider theme={theme}>
       <Navbar/>
       <SecondNav/>
+      <Carousel/>
     </ChakraProvider> 
   );
 }
