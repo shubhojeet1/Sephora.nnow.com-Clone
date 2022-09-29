@@ -41,7 +41,7 @@ export default function Carousel() {
   return (
     <Box
       position={'relative'}
-      height={'600px'}
+      height={'700px'}
       width={'full'}
       marginTop="40"
       overflow={'hidden'}>
@@ -93,7 +93,7 @@ export default function Carousel() {
         {cards.map((url, index) => (
           <Box
             key={index}
-            height={'md'}
+            height={'xl'}
             position="relative"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
