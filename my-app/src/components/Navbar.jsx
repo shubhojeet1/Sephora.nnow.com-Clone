@@ -23,8 +23,8 @@ export default function Navbar(){
     <Text fontWeight='190' lineHeight='10'>|</Text>
     </Box>
     <Box w='338px' h='40px' bg=''color='#000000'>
-      <Text lineHeight='1.3' fontSize='14' fontWeight='190'>Get 10% OFF on your first purchase.Use Code:
-      BEAUTY10</Text> 
+      <Text lineHeight='1.3' fontSize='14' fontWeight='190'>Get 10% OFF on your first purchase.Use Code:</Text>
+      <Text lineHeight='1.3' fontSize='14' fontWeight='190' marginLeft='20'>BEAUTY10</Text> 
     </Box>
     <Box w='94px' h='40px' bg=''color='#000000'>
     <HStack><BsFileArrowDown color='#FF3399' /><Text lineHeight='10' fontWeight='190'>Get App</Text></HStack>
