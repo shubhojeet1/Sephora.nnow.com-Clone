@@ -35,7 +35,7 @@ export default function Carousel() {
     'https://logan.nnnow.com/content/dam/nnnow-project/24-aug-2022/EsteeLauder_TopBannerdesktop.jpg',
     'https://logan.nnnow.com/content/dam/nnnow-project/01-sep-2022/Sephora_TopBanner_PrepPlease_Desktop.jpg',
     'https://logan.nnnow.com/content/dam/nnnow-project/15-sep-2022/Sephora_Homepagebanner_kajaldesktop.jpg',
-    'https://logan.nnnow.com/content/dam/nnnow-project/26-aug-2022/se/TooFaced_TopBannerdesktop.jpg',
+    'https://logan.nnnow.com/content/dam/nnnow-project/29-sep-2022/Benefit_HomepageBanner_Diwalidesktop.jpg',
   ];
 
   return (
@@ -43,7 +43,7 @@ export default function Carousel() {
       position={'relative'}
       height={'700px'}
       width={'full'}
-      marginTop="40"
+      marginTop=""
       overflow={'hidden'}>
       {/* CSS files for react-slick */}
       <link
