@@ -1,4 +1,4 @@
-import { HStack, Box, Container, Text, Image, Input, Button } from "@chakra-ui/react";
+import { HStack,  Container, Text, Image, Input, Button, Avatar, Box } from "@chakra-ui/react";
 // import { BsFileArrowDown } from 'react-icons/bs'
 import { FaRegUser } from 'react-icons/fa'
 import { FiSearch } from 'react-icons/fi'
@@ -6,11 +6,15 @@ import { MdFavoriteBorder } from 'react-icons/md'
 import { HiOutlineShoppingBag } from 'react-icons/hi'
 import Login from "./Login";
 import { useState } from "react";
+import { useStateValue } from "../context/StateProvider";
 
 // import {IconContext}from"react-icons"
 export default function SecondNav() {
 
   const [loginpopup, setLoginpopup] = useState(false)
+
+  const [{user}, dispatch] = useStateValue()
+
  
   return (
     <>
@@ -25,20 +29,41 @@ export default function SecondNav() {
 
 
           <HStack spacing="2">
-            <MdFavoriteBorder color='#FF3399' /><Text lineHeight='10' fontWeight='190'></Text>
+            <MdFavoriteBorder color='#FF3399' cursor={"pointer"}  /><Text lineHeight='10' fontWeight='190'></Text>
 
 
             <Text fontWeight='190' lineHeight='10'>|</Text>
 
 
-            <HiOutlineShoppingBag color='#FF3399' /><Text lineHeight='10' fontWeight='190'></Text>
+            <HiOutlineShoppingBag color='#FF3399' cursor={"pointer"}  /><Text lineHeight='10' fontWeight='190'></Text>
 
 
             <Text fontWeight='190' lineHeight='10'>|</Text>
 
+            
 
-
-            <FaRegUser color='#FF3399' size={16} /><Button fontWeight={250} bg='white' _hover={{ color: '#FF3399' }} onClick={() => setLoginpopup(true)}>Login</Button>
+            {user ? (
+              <>
+              {
+                user.photoURL ? (
+                  <Box w='40px' display='flex' alignItems='center'>
+                    <Image src={user.photoURL} borderRadius='50%'/>
+                    <Text fontSize='12px' marginLeft='2xl'>{user.displayName}</Text>
+                  </Box>
+                ) : (
+                  <>
+                    <Avatar w='40px'/>
+                  </>
+                )
+              }
+                
+              </>
+            ) : (
+              <>
+                <FaRegUser color='#FF3399' size={16} /><Button fontWeight={250} bg='white' _hover={{ color: '#FF3399' }} onClick={() => setLoginpopup(true)}>Login</Button>
+              </>
+            )}
+            
           </HStack>
 
 

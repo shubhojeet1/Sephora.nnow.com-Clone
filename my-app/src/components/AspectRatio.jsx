@@ -12,7 +12,7 @@ import { Player } from "./Player";
     return <Flex color="white" direction="column">
     <Flex justifyContent="center" flex="5">
       <Box pos="relative" h="100%" w="100%">
-        <Player url="hhttps://youtu.be/0S3OylWkYwM" />
+        <Player url="hhttps://youtu.be/0S3OylWkYwM" preload="none" autoPlay="false"/>
       </Box>
     </Flex>
     <Flex

@@ -25,6 +25,7 @@ import Box3 from './components/Box3'
 import Email from './components/Email'
 import OddText from './components/OddText';
 
+
 function App() {
   return (
 <ChakraProvider theme={theme}>
