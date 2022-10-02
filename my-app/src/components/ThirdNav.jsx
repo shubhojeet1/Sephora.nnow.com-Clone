@@ -112,7 +112,7 @@ import {MenuButton,HStack,Container,MenuDivider,MenuGroup,MenuList,MenuItem,Menu
   </MenuList>
 </Menu>
 <Menu>
-  <MenuButton as={Button}  colorScheme='white' color='black' _hover={{ color: '#FF3399' }}>
+  <MenuButton as={Button}  colorScheme='white' color='black'  _hover={{ color: '#FF3399' }}>
     BRANDS
   </MenuButton>
   <MenuList>

@@ -6,13 +6,22 @@ import reportWebVitals from './reportWebVitals';
 
 import * as serviceWorker from './serviceWorker';
 import { ChakraProvider } from '@chakra-ui/react';
+
+import { StateProvider } from './context/StateProvider';
+import { initialState } from './context/initialState';
+import reducer from './context/reducer';
+
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
 root.render(
+  <StateProvider initialState={initialState} reducer={reducer}>
   <ChakraProvider>
     <ColorModeScript />
-    <App />
+    
+      <App />
+   
   </ChakraProvider>
+  </StateProvider>
 );
 
 // If you want your app to work offline and load faster, you can change

@@ -16,7 +16,7 @@ export default function Navbar(){
     </Box>
     <Box w='140px' h='40px' bg='' color='#000000'>
       <HStack>
-       <VscLocation color='#FF3399' size={23}  /><Text lineHeight='10' fontWeight='190'>Store Locator</Text>
+       <VscLocation cursor={"pointer"}  color='#FF3399' size={23}  /><Text lineHeight='10' cursor={"pointer"} fontWeight='190'>Store Locator</Text>
         </HStack>
     </Box>
     <Box w='40px' h='40px' bg=''color='#000000'>
@@ -27,19 +27,19 @@ export default function Navbar(){
       <Text lineHeight='1.3' fontSize='14' fontWeight='190' marginLeft='20'>BEAUTY10</Text> 
     </Box>
     <Box w='94px' h='40px' bg=''color='#000000'>
-    <HStack><BsFileArrowDown color='#FF3399' /><Text lineHeight='10' fontWeight='190'>Get App</Text></HStack>
+    <HStack><BsFileArrowDown cursor={"pointer"}  color='#FF3399' /><Text lineHeight='10' cursor={"pointer"}  fontWeight='190'>Get App</Text></HStack>
     </Box>
     <Box w='40px' h='40px' bg=''color='#000000'>
     <Text fontWeight='190' lineHeight='10'>|</Text>
     </Box>
     <Box w='120px' h='40px' bg=''color='#000000'>
-    <HStack><FiPackage color='#FF3399' /><Text lineHeight='10' fontWeight='190'>Track Order</Text></HStack>
+    <HStack><FiPackage color='#FF3399' cursor={"pointer"}  /><Text lineHeight='10' cursor={"pointer"}  fontWeight='190'>Track Order</Text></HStack>
     </Box>
     <Box w='40px' h='40px' bg=''color='#000000'>
     <Text fontWeight='190' lineHeight='10'>|</Text>
     </Box>
     <Box w='85px' h='40px' bg=''color='#000000'>
-    <HStack><AiOutlineTrophy color='#FF3399' /><Text lineHeight='10' fontWeight='190'>Loyalty</Text></HStack>
+    <HStack><AiOutlineTrophy color='#FF3399' cursor={"pointer"}  /><Text lineHeight='10' fontWeight='190' cursor={"pointer"} >Loyalty</Text></HStack>
     </Box>
     
   </HStack>
